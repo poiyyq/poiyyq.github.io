@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Hello World~ Thank you for Read My Github Blog.大家好，这是我的第一个博客。旧闻github社区是大老爷们的宅区，没事打打酱油，看下技术贴，了解下github社区的文化。起初对个人博客不太感冒，原因有一下几点：  需要经常更新博客，发表新的内容。 维护个人博客，需要投入时间和精力。 对有需要解决的技术难点，通常看别人的博文就可以解决，无需自己动手。">
+<meta name="description" content="Nginx(反向代理服务器)一、正向代理 场景：在国内是无法正常使用google.com。如果想要访问google.com，可以购买一台国外的服务器A，此时你和服务器A的网络是相通的。而服务器A又跟google.com相通， 此时可以由服务器A代理你（客户端），去访问google.com。这个过程称之为正向代理，服务端（google.com）只需要知道代理服务器的ip，不需要知道客户端的ip。 结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/10/21/hello-world/index.html">
+<meta property="og:title" content="Nginx负载均衡">
+<meta property="og:url" content="http://yoursite.com/2018/10/23/Nginx负载均衡/index.html">
 <meta property="og:site_name" content="维尼先生">
-<meta property="og:description" content="Hello World~ Thank you for Read My Github Blog.大家好，这是我的第一个博客。旧闻github社区是大老爷们的宅区，没事打打酱油，看下技术贴，了解下github社区的文化。起初对个人博客不太感冒，原因有一下几点：  需要经常更新博客，发表新的内容。 维护个人博客，需要投入时间和精力。 对有需要解决的技术难点，通常看别人的博文就可以解决，无需自己动手。">
+<meta property="og:description" content="Nginx(反向代理服务器)一、正向代理 场景：在国内是无法正常使用google.com。如果想要访问google.com，可以购买一台国外的服务器A，此时你和服务器A的网络是相通的。而服务器A又跟google.com相通， 此时可以由服务器A代理你（客户端），去访问google.com。这个过程称之为正向代理，服务端（google.com）只需要知道代理服务器的ip，不需要知道客户端的ip。 结">
 <meta property="og:locale" content="Chinese">
-<meta property="og:updated_time" content="2018-10-22T17:37:27.349Z">
+<meta property="og:updated_time" content="2018-10-22T17:49:01.311Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Hello World~ Thank you for Read My Github Blog.大家好，这是我的第一个博客。旧闻github社区是大老爷们的宅区，没事打打酱油，看下技术贴，了解下github社区的文化。起初对个人博客不太感冒，原因有一下几点：  需要经常更新博客，发表新的内容。 维护个人博客，需要投入时间和精力。 对有需要解决的技术难点，通常看别人的博文就可以解决，无需自己动手。">
+<meta name="twitter:title" content="Nginx负载均衡">
+<meta name="twitter:description" content="Nginx(反向代理服务器)一、正向代理 场景：在国内是无法正常使用google.com。如果想要访问google.com，可以购买一台国外的服务器A，此时你和服务器A的网络是相通的。而服务器A又跟google.com相通， 此时可以由服务器A代理你（客户端），去访问google.com。这个过程称之为正向代理，服务端（google.com）只需要知道代理服务器的ip，不需要知道客户端的ip。 结">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/21/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2018/10/23/Nginx负载均衡/">
 
 
 
 
 
-  <title>Hello World | 维尼先生</title>
+  <title>Nginx负载均衡 | 维尼先生</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/21/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/23/Nginx负载均衡/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Winnie">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Nginx负载均衡</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-21T09:00:36+08:00">
-                2018-10-21
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-23T00:59:38+08:00">
+                2018-10-23
               </time>
             
 
@@ -299,41 +299,25 @@
       
 
       
-        <p>Hello World~ Thank you for Read My Github Blog.<br>大家好，这是我的第一个博客。旧闻github社区是大老爷们的宅区，没事打打酱油，看下技术贴，了解下github社区的文化。<br>起初对个人博客不太感冒，原因有一下几点：</p>
-<ol>
-<li>需要经常更新博客，发表新的内容。</li>
-<li>维护个人博客，需要投入时间和精力。</li>
-<li>对有需要解决的技术难点，通常看别人的博文就可以解决，无需自己动手。</li>
+        <h1 id="Nginx-反向代理服务器"><a href="#Nginx-反向代理服务器" class="headerlink" title="Nginx(反向代理服务器)"></a>Nginx(反向代理服务器)</h1><h2 id="一、正向代理"><a href="#一、正向代理" class="headerlink" title="一、正向代理"></a>一、正向代理</h2><ol>
+<li>场景：在国内是无法正常使用google.com。如果想要访问google.com，可以购买一台国外的服务器A，此时你和服务器A的网络是相通的。而服务器A又跟google.com相通， 此时可以由服务器A代理你（客户端），去访问google.com。这个过程称之为正向代理，服务端（google.com）只需要知道代理服务器的ip，不需要知道客户端的ip。</li>
+<li>结论：正向代理，是用于代理客户端的。</li>
 </ol>
-<p>以上内容可以总结为一个字：“懒”。</p>
-<p>也是最近几个月才开始意识到这个问题，对于毕业不久的IT小白而言，未来发展可谓是浩瀚大海，不多努力，多挣扎一下怎么行呢？<br>稍微观察一下就可以发现，公司大概分为三种人：</p>
-<ol>
-<li>工作热情低、工作推脱，办事拖拉</li>
-<li>工作热情中、安于现状</li>
-<li>工作热情高、积极进取<br>第一类人比较少，我见过个别态度不认真的被劝退过，真的有！<br>第二类人应该占70%~80%的比例吧，毕竟人是有惰性的，很难长时间保持高度热情。<br>第三类人通常能够很好地定位自己，知道要做什么，学什么，以及下一步需要什么。<br>毫无疑问，第三种人才有机会去吸收更多的知识，有可能是技术上的，也有可能是业务上的。<br>你需要做也很简单，进行攀比。通过你与第一、二类人比较，你就会知道，安于现状对你目前的发展极为不利。<br>以后总需要买房吧？出个远门需要有个交通工具吧？养儿育女是不是应该在才艺上也做下投资？<br>这些都涉及到一个关键的点-&gt;Money！</li>
+<h2 id="二、反向代理"><a href="#二、反向代理" class="headerlink" title="二、反向代理"></a>二、反向代理</h2><ol>
+<li>场景：当一个服务器接受过多来自客户端的请求时，服务器难以处理和响应这些请求，会使得整个系统性能下降。为了解决这个难题，可以提供多台部署相同应用的服务器，让客户端的请求分别发送到不同的服务器上，这样单机服务器的压力就会降低很多，整体性能便会提升。但是有一个问题，每个服务器ip都是不同的，也就是说客户端的请求要发送到多个不同的ip上。让客户手动指定ip进行请求，这种方式很不明智。首先是客户的随机性，不知道会访问哪台服务器，其次，会造成一部分服务器压力大，一部分服务器几乎没有使用，浪费资源。因此，这里就需要一个角色去代理服务器，让客户端的请求直接发送到这个角色上，由这个角色去分发请求到不同的服务器上。<br>这个角色就是反向代理服务器。</li>
+<li>结论：反向代理，是用于代理服务端的。</li>
 </ol>
-<p>所以，少年啊，好好奋斗吧！</p>
-<p>初创这个博客出于以下几个点：</p>
-<ol>
-<li>总结生活经验和技术经验，便于巩固知识。</li>
-<li>分享是一种美德。记录自己走过的坑，让猿友少踩雷区。</li>
-<li>打响自己在业界的声望（技术再强，也要有人认可你才行啊）</li>
+<h2 id="三、-负载均衡"><a href="#三、-负载均衡" class="headerlink" title="三、 负载均衡"></a>三、 负载均衡</h2><ol>
+<li>场景：反向代理过程中，每台服务器处理来自客户端的请求都应该是均衡的。</li>
+<li>原理：使用一个反向代理服务器指向多台部署相同应用的服务器，客户端请求直接向反向代理服务器发起，反向代理服务器根据负载均衡机制，将请求转发到不同的应用服务器上。</li>
+<li>负载均衡机制：<br>nginx提供了一下三种方法：<br>1）round-robin：请求以循环、轮转的方式分发到服务器<br>2）least-connected：下一个请求被分配到拥有最少活动连接数的服务器<br>3）ip-hash：使用一个哈希函数，基于客户端ip地址判断下一个请求应该被分发到哪台服务器</li>
 </ol>
-<p>最后，祝大家工作生活双赢！</p>
-<!-- 
-## Quick Start
+<p>a）循环、轮转负载均衡<br>round-robin：默认情况下，使用循环、轮转的方式分发请求到服务器<br>配置示例：<br>http{<br>    upstream myapp{<br>        server srv1.example.com;<br>        server srv2.example.com;<br>        server srv3.example.com;<br>    }<br>    server{<br>        listen 80;<br>        location / {<br>            proxy_pass <a href="http://myapp" target="_blank" rel="noopener">http://myapp</a>;<br>        }<br>    }<br>}</p>
+<p>当不指定负载均衡方式时，默认以round-robin方式实现。所有请求都会被代理到myapp服务器，根据负载均衡机制分发请求。</p>
+<p>b）最少连接负载均衡<br>least-connected：当一些请求处理的时间比较长时，最少连接负载均衡能够争取到更大的公平。<br>配置示例：<br>upstream myapp{<br>    least-conn;<br>    server srv1.example.com;<br>    server srv2.example.com;<br>    server srv3.example.com;<br>}</p>
+<p>c）基于ip地址的负载均衡<br>ip-hash：采用目标地址散列调度（Destination Hashing Scheduling）算法，根据请求的目标ip地址，作为散列键（Hash Key）从静态分配的散列表找出对应的服务器，若该服务器可用且未超载，则将请求发送带服务器，否则返回空。<br>upstream myapp{<br>    ip-hash;<br>    server srv1.example.com;<br>    server srv2.example.com;<br>    server srv3.example.com;<br>}</p>
+<p>Nginx和Zookeeper协同使用场景：<a href="https://blog.csdn.net/xiangjai/article/details/56844400" target="_blank" rel="noopener">https://blog.csdn.net/xiangjai/article/details/56844400</a><br>1.单纯使用Nginx，会造成配置维护成本变高。<br>2.单点故障率增加，因为热点服务的访问量很高，如果这个服务的负载均衡服务出现问题，整个服务都会挂点</p>
 
-### Create a new post
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a> –&gt;</p>
--->
       
     </div>
     
@@ -357,15 +341,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/10/21/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/23/Nginx负载均衡/" rel="prev" title="Nginx负载均衡">
-                Nginx负载均衡 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -417,8 +401,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -460,6 +453,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Nginx-反向代理服务器"><span class="nav-number">1.</span> <span class="nav-text">Nginx(反向代理服务器)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、正向代理"><span class="nav-number">1.1.</span> <span class="nav-text">一、正向代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、反向代理"><span class="nav-number">1.2.</span> <span class="nav-text">二、反向代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、-负载均衡"><span class="nav-number">1.3.</span> <span class="nav-text">三、 负载均衡</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
