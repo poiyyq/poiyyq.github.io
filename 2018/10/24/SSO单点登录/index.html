@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Hello World~ Thank you for Read My Github Blog.大家好，这是我的第一个博客。旧闻github社区是大老爷们的宅区，没事打打酱油，看下技术贴，了解下github社区的文化。起初对个人博客不太感冒，原因有一下几点：  需要经常更新博客，发表新的内容。 维护个人博客，需要投入时间和精力。 对有需要解决的技术难点，通常看别人的博文就可以解决，无需自己动手。">
+<meta name="description" content="单点登陆单系统登陆如何实现示例：客户端向服务端发送请求，首次请求受保护资源时，服务端生成cookie并返回给客户端，客户端保存cookie。下次请求服务端时自动带上服务端相关域名的所有cookie，服务端收到cookie并检测是否存在，若存在则返回受保护资源给客户端。总结：单系统登陆是依据cookie域（通常是服务端的域名）进行的，记录用户状态。 集群系统下单系统登录诟病服务器集群环境下，不同系统">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/10/21/hello-world/index.html">
+<meta property="og:title" content="SSO单点登录">
+<meta property="og:url" content="http://yoursite.com/2018/10/24/SSO单点登录/index.html">
 <meta property="og:site_name" content="维尼先生">
-<meta property="og:description" content="Hello World~ Thank you for Read My Github Blog.大家好，这是我的第一个博客。旧闻github社区是大老爷们的宅区，没事打打酱油，看下技术贴，了解下github社区的文化。起初对个人博客不太感冒，原因有一下几点：  需要经常更新博客，发表新的内容。 维护个人博客，需要投入时间和精力。 对有需要解决的技术难点，通常看别人的博文就可以解决，无需自己动手。">
+<meta property="og:description" content="单点登陆单系统登陆如何实现示例：客户端向服务端发送请求，首次请求受保护资源时，服务端生成cookie并返回给客户端，客户端保存cookie。下次请求服务端时自动带上服务端相关域名的所有cookie，服务端收到cookie并检测是否存在，若存在则返回受保护资源给客户端。总结：单系统登陆是依据cookie域（通常是服务端的域名）进行的，记录用户状态。 集群系统下单系统登录诟病服务器集群环境下，不同系统">
 <meta property="og:locale" content="Chinese">
-<meta property="og:updated_time" content="2018-10-24T16:42:21.729Z">
+<meta property="og:updated_time" content="2018-10-24T16:42:59.960Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Hello World~ Thank you for Read My Github Blog.大家好，这是我的第一个博客。旧闻github社区是大老爷们的宅区，没事打打酱油，看下技术贴，了解下github社区的文化。起初对个人博客不太感冒，原因有一下几点：  需要经常更新博客，发表新的内容。 维护个人博客，需要投入时间和精力。 对有需要解决的技术难点，通常看别人的博文就可以解决，无需自己动手。">
+<meta name="twitter:title" content="SSO单点登录">
+<meta name="twitter:description" content="单点登陆单系统登陆如何实现示例：客户端向服务端发送请求，首次请求受保护资源时，服务端生成cookie并返回给客户端，客户端保存cookie。下次请求服务端时自动带上服务端相关域名的所有cookie，服务端收到cookie并检测是否存在，若存在则返回受保护资源给客户端。总结：单系统登陆是依据cookie域（通常是服务端的域名）进行的，记录用户状态。 集群系统下单系统登录诟病服务器集群环境下，不同系统">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/21/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2018/10/24/SSO单点登录/">
 
 
 
 
 
-  <title>Hello World | 维尼先生</title>
+  <title>SSO单点登录 | 维尼先生</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/21/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/24/SSO单点登录/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Winnie">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">SSO单点登录</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-21T09:00:36+08:00">
-                2018-10-21
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-24T23:13:12+08:00">
+                2018-10-24
               </time>
             
 
@@ -299,40 +299,13 @@
       
 
       
-        <p>Hello World~ Thank you for Read My Github Blog.<br>大家好，这是我的第一个博客。旧闻github社区是大老爷们的宅区，没事打打酱油，看下技术贴，了解下github社区的文化。<br>起初对个人博客不太感冒，原因有一下几点：</p>
-<ul>
-<li>需要经常更新博客，发表新的内容。</li>
-<li>维护个人博客，需要投入时间和精力。</li>
-<li>对有需要解决的技术难点，通常看别人的博文就可以解决，无需自己动手。</li>
-</ul>
-<p>以上内容可以总结为一个字：“懒”。<br>也是最近几个月才开始意识到这个问题，对于毕业不久的IT小白而言，未来发展可谓是浩瀚大海，不多努力，多挣扎一下怎么行呢？<br>稍微观察一下就可以发现，公司大概分为三种人：</p>
-<ul>
-<li>工作热情低、工作推脱，办事拖拉</li>
-<li>工作热情中、安于现状</li>
-<li>工作热情高、积极进取</li>
-</ul>
-<p>第一类人比较少，我见过个别态度不认真的被劝退过，真的有！<br>第二类人应该占70%~80%的比例吧，毕竟人是有惰性的，很难长时间保持高度热情。<br>第三类人通常能够很好地定位自己，知道要做什么，学什么，以及下一步需要什么。<br>毫无疑问，第三种人才有机会去吸收更多的知识，有可能是技术上的，也有可能是业务上的。<br>你需要做也很简单，进行攀比。通过你与第一、二类人比较，你就会知道，安于现状对你目前的发展极为不利。<br>以后总需要买房吧？出个远门需要有个交通工具吧？养儿育女是不是应该在才艺上也做下投资？<br>这些都涉及到一个关键的点-&gt;Money！<br>所以，少年啊，好好奋斗吧！</p>
-<p>初创这个博客出于以下几个点：</p>
-<ul>
-<li>总结生活经验和技术经验，便于巩固知识。</li>
-<li>分享是一种美德。记录自己走过的坑，让猿友少踩雷区。</li>
-<li>打响自己在业界的声望（技术再强，也要有人认可你才行啊）</li>
-</ul>
-<p>最后，祝大家工作生活双赢！</p>
-<!-- 
-## Quick Start
+        <h1 id="单点登陆"><a href="#单点登陆" class="headerlink" title="单点登陆"></a>单点登陆</h1><h2 id="单系统登陆如何实现"><a href="#单系统登陆如何实现" class="headerlink" title="单系统登陆如何实现"></a>单系统登陆如何实现</h2><p>示例：客户端向服务端发送请求，首次请求受保护资源时，服务端生成cookie并返回给客户端，客户端保存cookie。下次请求服务端时自动带上服务端相关域名的所有cookie，服务端收到cookie并检测是否存在，若存在则返回受保护资源给客户端。<br>总结：单系统登陆是依据cookie域（通常是服务端的域名）进行的，记录用户状态。</p>
+<h2 id="集群系统下单系统登录诟病"><a href="#集群系统下单系统登录诟病" class="headerlink" title="集群系统下单系统登录诟病"></a>集群系统下单系统登录诟病</h2><p>服务器集群环境下，不同系统的域名不一样，用户每次访问该系统时，都需要进行一次登陆操作，操作繁琐，用户体验感也差。<br>这个时候，单点登陆就可以解决我们的问题。</p>
+<h2 id="单点登陆-1"><a href="#单点登陆-1" class="headerlink" title="单点登陆"></a>单点登陆</h2><p>单点登陆（Single Sign On）：是指在多系统应用集群环境下，只需要在系统登陆一次，就可以访问其他子系统且无需再次登陆。单点登陆还包括（注销模块）</p>
+<p>原理：从系统集群中抽出用户中心模块，作为系统授权中心管理。<br>假设有集群中有系统1，系统2，用户中心三个系统。<br>1.当客户端首次访问系统1时，系统1去访问用户中心该用户是否已经登陆，用户中心响应用户未登陆，返回登陆页面（携带系统1地址）给客户端。<br>2.客户端直接向用户中心系统发起登陆请求，用户中心接受请求，校验通过后生成令牌（关键点），并创建全局会话，跳转到系统1（携带令牌）。<br>3.系统1接受到用户中心携带的令牌，再向用户中心发起令牌校验请求<br>4.用户中心校验令牌通过，向系统1注册用户信息，返回成功给系统1<br>5.系统1创建局部会话，并将受保护资源返回给客户端。<br>6-1.客户端下一次访问系统1，系统1根据局部会话是否存在，若存在，直接返回受保护资源。否则重复第1步操作。<br>6-2.客户端下一次访问系统2，系统2检测局部会话不存在，系统2去请求用户中心。<br>7.用户中心检测用户已登录，返回令牌给系统2。<br>8.系统2接收令牌后，向用户中心发起令牌校验。<br>9.用户中心令牌校验通过，给系统2返回成功信息<br>10.系统2创建局部会话，并将受保护资源返回给客户端。<br>11.客户端下一次访问系统1/系统2， 参照6-1/6-2即可。</p>
+<h2 id="单点注销"><a href="#单点注销" class="headerlink" title="单点注销"></a>单点注销</h2><p>1.客户端向系统1发起注销请求<br>2.系统1向用户中心发起注销请求<br>3.用户中心校验用户登陆令牌通过，注销令牌，向各子系统发起注销令牌请求。<br>4.所有子系统注销该用户的登陆令牌</p>
+<p>单点登陆指导：<a href="https://www.cnblogs.com/ywlaker/p/6113927.html#!comments" target="_blank" rel="noopener">https://www.cnblogs.com/ywlaker/p/6113927.html#!comments</a></p>
 
-### Create a new post
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a> –&gt;</p>
--->
       
     </div>
     
@@ -356,15 +329,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/10/23/Nginx负载均衡/" rel="next" title="Nginx负载均衡">
+                <i class="fa fa-chevron-left"></i> Nginx负载均衡
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/23/Nginx负载均衡/" rel="prev" title="Nginx负载均衡">
-                Nginx负载均衡 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -416,8 +389,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -459,6 +441,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#单点登陆"><span class="nav-number">1.</span> <span class="nav-text">单点登陆</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#单系统登陆如何实现"><span class="nav-number">1.1.</span> <span class="nav-text">单系统登陆如何实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#集群系统下单系统登录诟病"><span class="nav-number">1.2.</span> <span class="nav-text">集群系统下单系统登录诟病</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单点登陆-1"><span class="nav-number">1.3.</span> <span class="nav-text">单点登陆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单点注销"><span class="nav-number">1.4.</span> <span class="nav-text">单点注销</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
