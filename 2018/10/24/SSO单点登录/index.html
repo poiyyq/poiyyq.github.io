@@ -14,10 +14,14 @@
 <meta property="og:site_name" content="维尼先生">
 <meta property="og:description" content="单点登陆单系统登陆如何实现示例：客户端向服务端发送请求，首次请求受保护资源时，服务端生成cookie并返回给客户端，客户端保存cookie。下次请求服务端时自动带上服务端相关域名的所有cookie，服务端收到cookie并检测是否存在，若存在则返回受保护资源给客户端。总结：单系统登陆是依据cookie域（通常是服务端的域名）进行的，记录用户状态。 集群系统下单系统登录诟病服务器集群环境下，不同系统">
 <meta property="og:locale" content="Chinese">
-<meta property="og:updated_time" content="2018-10-24T16:45:35.135Z">
+<meta property="og:image" content="http://yoursite.com/image/sso单点登录/单系统登录.png">
+<meta property="og:image" content="http://yoursite.com/image/sso单点登录/单点登录.png">
+<meta property="og:image" content="http://yoursite.com/image/sso单点登录/单点注销.png">
+<meta property="og:updated_time" content="2018-10-28T07:53:32.898Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSO单点登录">
 <meta name="twitter:description" content="单点登陆单系统登陆如何实现示例：客户端向服务端发送请求，首次请求受保护资源时，服务端生成cookie并返回给客户端，客户端保存cookie。下次请求服务端时自动带上服务端相关域名的所有cookie，服务端收到cookie并检测是否存在，若存在则返回受保护资源给客户端。总结：单系统登陆是依据cookie域（通常是服务端的域名）进行的，记录用户状态。 集群系统下单系统登录诟病服务器集群环境下，不同系统">
+<meta name="twitter:image" content="http://yoursite.com/image/sso单点登录/单系统登录.png">
   
     <link rel="alternate" href="/atom.xml" title="维尼先生" type="application/atom+xml">
   
@@ -86,12 +90,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="单点登陆"><a href="#单点登陆" class="headerlink" title="单点登陆"></a>单点登陆</h1><h2 id="单系统登陆如何实现"><a href="#单系统登陆如何实现" class="headerlink" title="单系统登陆如何实现"></a>单系统登陆如何实现</h2><p>示例：客户端向服务端发送请求，首次请求受保护资源时，服务端生成cookie并返回给客户端，客户端保存cookie。下次请求服务端时自动带上服务端相关域名的所有cookie，服务端收到cookie并检测是否存在，若存在则返回受保护资源给客户端。<br>总结：单系统登陆是依据cookie域（通常是服务端的域名）进行的，记录用户状态。</p>
+        <h1 id="单点登陆"><a href="#单点登陆" class="headerlink" title="单点登陆"></a>单点登陆</h1><h2 id="单系统登陆如何实现"><a href="#单系统登陆如何实现" class="headerlink" title="单系统登陆如何实现"></a>单系统登陆如何实现</h2><p>示例：客户端向服务端发送请求，首次请求受保护资源时，服务端生成cookie并返回给客户端，客户端保存cookie。下次请求服务端时自动带上服务端相关域名的所有cookie，服务端收到cookie并检测是否存在，若存在则返回受保护资源给客户端。<br><img src="/image/sso单点登录/单系统登录.png" alt=""><br>总结：单系统登陆是依据cookie域（通常是服务端的域名）进行的，记录用户状态。</p>
 <h2 id="集群系统下单系统登录诟病"><a href="#集群系统下单系统登录诟病" class="headerlink" title="集群系统下单系统登录诟病"></a>集群系统下单系统登录诟病</h2><p>服务器集群环境下，不同系统的域名不一样，用户每次访问该系统时，都需要进行一次登陆操作，操作繁琐，用户体验感也差。<br>这个时候，单点登陆就可以解决我们的问题。</p>
-<h2 id="单点登陆-1"><a href="#单点登陆-1" class="headerlink" title="单点登陆"></a>单点登陆</h2><p>单点登陆（Single Sign On）：是指在多系统应用集群环境下，只需要在系统登陆一次，就可以访问其他子系统且无需再次登陆。单点登陆还包括（注销模块）</p>
-<p>原理：从系统集群中抽出用户中心模块，作为系统授权中心管理。<br>假设有集群中有系统1，系统2，用户中心三个系统。<br>1.当客户端首次访问系统1时，系统1去访问用户中心该用户是否已经登陆，用户中心响应用户未登陆，返回登陆页面（携带系统1地址）给客户端。<br>2.客户端直接向用户中心系统发起登陆请求，用户中心接受请求，校验通过后生成令牌（关键点），并创建全局会话，跳转到系统1（携带令牌）。<br>3.系统1接受到用户中心携带的令牌，再向用户中心发起令牌校验请求<br>4.用户中心校验令牌通过，向系统1注册用户信息，返回成功给系统1<br>5.系统1创建局部会话，并将受保护资源返回给客户端。<br>6-1.客户端下一次访问系统1，系统1根据局部会话是否存在，若存在，直接返回受保护资源。否则重复第1步操作。<br>6-2.客户端下一次访问系统2，系统2检测局部会话不存在，系统2去请求用户中心。<br>7.用户中心检测用户已登录，返回令牌给系统2。<br>8.系统2接收令牌后，向用户中心发起令牌校验。<br>9.用户中心令牌校验通过，给系统2返回成功信息<br>10.系统2创建局部会话，并将受保护资源返回给客户端。<br>11.客户端下一次访问系统1/系统2， 参照6-1/6-2即可。</p>
-<h2 id="单点注销"><a href="#单点注销" class="headerlink" title="单点注销"></a>单点注销</h2><p>1.客户端向系统1发起注销请求<br>2.系统1向用户中心发起注销请求<br>3.用户中心校验用户登陆令牌通过，注销令牌，向各子系统发起注销令牌请求。<br>4.所有子系统注销该用户的登陆令牌</p>
-<p>单点登陆指导：<a href="https://www.cnblogs.com/ywlaker/p/6113927.html#!comments" target="_blank" rel="noopener">https://www.cnblogs.com/ywlaker/p/6113927.html#!comments</a></p>
+<h2 id="单点登陆-1"><a href="#单点登陆-1" class="headerlink" title="单点登陆"></a>单点登陆</h2><p>单点登陆（Single Sign On）：是指在多系统应用集群环境下，只需要在系统登陆一次，就可以访问其他子系统且无需再次登陆。单点登陆还包括（注销模块）<br><img src="/image/sso单点登录/单点登录.png" alt=""><br>原理：从系统集群中抽出用户中心模块，作为系统授权中心管理。<br>假设有集群中有系统1，系统2，用户中心三个系统。<br>1.当客户端首次访问系统1时，系统1去访问用户中心该用户是否已经登陆，用户中心响应用户未登陆，返回登陆页面（携带系统1地址）给客户端。<br>2.客户端直接向用户中心系统发起登陆请求，用户中心接受请求，校验通过后生成令牌（关键点），并创建全局会话，跳转到系统1（携带令牌）。<br>3.系统1接受到用户中心携带的令牌，再向用户中心发起令牌校验请求<br>4.用户中心校验令牌通过，向系统1注册用户信息，返回成功给系统1<br>5.系统1创建局部会话，并将受保护资源返回给客户端。<br>6-1.客户端下一次访问系统1，系统1根据局部会话是否存在，若存在，直接返回受保护资源。否则重复第1步操作。<br>6-2.客户端下一次访问系统2，系统2检测局部会话不存在，系统2去请求用户中心。<br>7.用户中心检测用户已登录，返回令牌给系统2。<br>8.系统2接收令牌后，向用户中心发起令牌校验。<br>9.用户中心令牌校验通过，给系统2返回成功信息<br>10.系统2创建局部会话，并将受保护资源返回给客户端。<br>11.客户端下一次访问系统1/系统2， 参照6-1/6-2即可。</p>
+<h2 id="单点注销"><a href="#单点注销" class="headerlink" title="单点注销"></a>单点注销</h2><p><img src="/image/sso单点登录/单点注销.png" alt="单点注销"><br>1.客户端向系统1发起注销请求<br>2.系统1向用户中心发起注销请求<br>3.用户中心校验用户登陆令牌通过，注销令牌，向各子系统发起注销令牌请求。<br>4.所有子系统注销该用户的登陆令牌</p>
+<p>单点登陆指导：<a href="https://www.cnblogs.com/ywlaker/p/6113927.html" target="_blank" rel="noopener">https://www.cnblogs.com/ywlaker/p/6113927.html</a></p>
 
       
     </div>
